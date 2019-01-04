@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+    <button mat-button class="sidenav-toggle" (click)="toggleSidenav.emit()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>NasPi</span>
+    <span class="example-spacer"></span>
+  
+    <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+  
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item >New Contact</button>
+      <button mat-menu-item >Toggle theme</button>
+      <button mat-menu-item >Toggle dir</button>
+    </mat-menu>
+  
+  
+  </mat-toolbar>
+  
