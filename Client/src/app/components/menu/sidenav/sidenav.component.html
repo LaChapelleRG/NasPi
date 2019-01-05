@@ -3,15 +3,20 @@
     <mat-toolbar color="primary">
       Menu
     </mat-toolbar>
+    <mat-nav-list>
+      <mat-list-item>
+        <a matLine routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a matLine routerLink="/users" routerLinkActive="active">Users</a>
+      </mat-list-item>
+    </mat-nav-list>
   </mat-sidenav>
   <div class="app-sidenav-content">
     <app-toolbar (toggleTheme)="toggleTheme()" (toggleSidenav)="sidenav.toggle()" (toggleDir)="toggleDir()">
     </app-toolbar>
     <div class="wrapper">
-      <div>
-        Test
-      </div>
-      <!--<router-outlet></router-outlet>-->
+      <router-outlet></router-outlet>
     </div>
   </div>
 </mat-sidenav-container>
